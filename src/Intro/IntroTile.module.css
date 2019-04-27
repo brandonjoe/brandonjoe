@@ -1,0 +1,23 @@
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    color: rgb(255, 255, 255);
+    margin-top: 1.3rem;
+}
+.header{
+    font-size: 3.3rem;
+    margin-right: 3rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+.subheader{
+    font-weight: 300;
+    font-size: 1rem;
+    margin-right: 3rem;
+    width: 70%;
+    text-align: right;
+}

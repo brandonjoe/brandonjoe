@@ -1,0 +1,40 @@
+.container{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.main{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    
+    grid-template-columns: auto repeat(8, 10rem) auto ;
+    grid-template-rows: auto repeat(5, 10rem) auto;
+    grid-template-areas: 
+      ". . . . . . . . ."
+      ". . . . . . . . ."
+      ". . main main main main sidebar . ."
+      ". footer footer footer footer footer footer footer footer"
+      ". . header header . last last last last ";
+}
+
+.box1{
+    grid-area: main;
+}
+.box2{
+    background-color: green;
+    grid-area: sidebar;
+}
+.box4{
+    background-color: yellow;
+    grid-area: footer;
+}
+.box6{
+    background-color: orange;
+    grid-area: last
+}
+
