@@ -11,7 +11,7 @@ class Grid extends Component {
                     
                     <div className={`${classes.box1}`}><IntroTile/></div>
                     <div className={`${classes.box2}`}><ImgBox img={img1}/></div>
-                    <div className={`${classes.box4}`}></div>
+                    <div className={`${classes.box4}`}>Hello</div>
                     <div className={`${classes.box6}`}></div>
 
                    
