@@ -6,7 +6,9 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
+
 }
+
 .main{
     display: grid;
     width: 100%;
@@ -17,23 +19,75 @@
     grid-template-areas: 
       ". . . . . . . . ."
       ". . . . . . . . ."
-      ". . main main main main sidebar . ."
-      ". footer footer footer footer footer footer footer footer"
-      ". . header header . last last last last ";
+      ". . title title title title fishing1 about ."
+      ". skills zion zion zion venice portfolio snowboard monica"
+      ". . building blog . snowboard2 snowboard2 contact fishing2 ";
+      backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.box{
+    transition: .5s all;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    z-index: 1;
+    padding: 0;
+    border: 0;
+    background: none;
+    outline: none;
+}
+.box:hover{
+    transform: scale(1.1);
+    z-index: 100;
+}
+.title{
+    grid-area: title;
+}
+.fishing1{
+    grid-area: fishing1;
+}
+.about{
+    grid-area: about;
 }
 
-.box1{
-    grid-area: main;
+.portfolio{
+    grid-area: portfolio;
 }
-.box2{
-    background-color: green;
-    grid-area: sidebar;
+.zion{
+    grid-area: zion;
 }
-.box4{
+.snowboard1{
+    grid-area:snowboard;
+}
+.skills{
+    grid-area: skills;
+}
+.venice{
+    grid-area: venice;
+}
+.building{
+    grid-area: building;
+}
+.monica{
+    grid-area: monica;
+}
+.blog{
+    grid-area: blog;
+}
+.snowboard2{
+    grid-area: snowboard2;
+}
+.fishing2{
+    grid-area: fishing2;
+}
+.contact{
+    grid-area: contact;
+}
+.box20{
     background-color: yellow;
     grid-area: footer;
 }
-.box6{
+.box21{
     background-color: orange;
     grid-area: last
 }

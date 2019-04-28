@@ -2,18 +2,41 @@ import React, { Component } from 'react';
 import classes from './Grid.module.css';
 import IntroTile from './IntroTile.js';
 import ImgBox from './ImgBox.js';
-import img1 from '../media/intro1.jpg'
+import ColorBox from './ColorBox.js';
+import ScrollAnimation from 'react-animate-on-scroll';
+
+
+import img1 from '../media/intro1.jpg';
+import img2 from '../media/intro2.jpg';
+import img3 from '../media/intro3.jpg';
+import img4 from '../media/intro4.jpg';
+import img5 from '../media/intro5.jpg';
+import img6 from '../media/intro6.jpg';
+import img7 from '../media/intro7.jpg';
+import img8 from '../media/intro8.JPG';
+import { bigIntLiteral } from '@babel/types';
 class Grid extends Component {
-    render() {
+    
+    render(fullpageApi) {
         return (
             <div className={classes.container}>
                 <div className={classes.main}>
-                    
-                    <div className={`${classes.box1}`}><IntroTile/></div>
-                    <div className={`${classes.box2}`}><ImgBox img={img1}/></div>
-                    <div className={`${classes.box4}`}>Hello</div>
-                    <div className={`${classes.box6}`}></div>
-
+                
+                    <ScrollAnimation  duration={2}animateIn='fadeInLeft' animateOut='fadeOutLeft' className={`${classes.title}`}><IntroTile/></ScrollAnimation>
+                    <ScrollAnimation animateOnce={true} duration={2} animateIn='fadeInDown' className={`${classes.fishing1} ${classes.box} `}><div className={classes.box}><ImgBox img={img1}/></div></ScrollAnimation >
+                    <ScrollAnimation  duration={2} animateIn='fadeInRight' animateOut='fadeOutDown' className={`${classes.about} ${classes.box}`}><button onClick={() => {this.props.about()}} className={classes.box}><ColorBox color={'#508991'} icon={'far fa-address-card'} title={'About'}/></button></ScrollAnimation >
+                    <ScrollAnimation animateOut='fadeOutDown' duration={2} animateIn='fadeInRight' className={`${classes.portfolio} ${classes.box}`}><div className={classes.box}><ColorBox color={'#09BC8A'} icon={'fas fa-code'} title={'Portfolio'}/></div></ScrollAnimation >
+                    <ScrollAnimation animateOnce={true} duration={2} animateIn='fadeInUp' className={`${classes.zion} ${classes.box}`}><div className={classes.box}><ImgBox img={img2}/></div></ScrollAnimation >
+                    <ScrollAnimation animateOnce={true} duration={2} animateIn='fadeInDown' className={`${classes.snowboard1} ${classes.box}`}><div className={classes.box}><ImgBox img={img3}/></div></ScrollAnimation >
+                    <ScrollAnimation animateOut='fadeOutDown' duration={2} animateIn='fadeInRight' className={`${classes.skills} ${classes.box}`}><div className={classes.box}><ColorBox color={'#004346'} icon={'fas fa-code'} title={'Skills'}/></div></ScrollAnimation >
+                    <ScrollAnimation animateOnce={true} duration={2} animateIn='fadeInLeft' className={`${classes.venice} ${classes.box}`}><div className={classes.box}><ImgBox img={img4}/></div></ScrollAnimation >
+                    <ScrollAnimation animateOnce={true} duration={2} animateIn='fadeInUp' className={`${classes.building} ${classes.box}`}><div className={classes.box}><ImgBox img={img5}/></div></ScrollAnimation >
+                    <ScrollAnimation animateOnce={true} duration={2} animateIn='fadeInLeft' className={`${classes.monica} ${classes.box}`}><div className={classes.box}><ImgBox img={img6}/></div></ScrollAnimation >
+                    <ScrollAnimation animateOut='fadeOutDown' duration={2} animateIn='fadeInRight' className={`${classes.blog} ${classes.box}`}><div className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></div></ScrollAnimation >
+                    <ScrollAnimation animateOnce={true} duration={2} animateIn='fadeInRight' className={`${classes.snowboard2} ${classes.box}`}><div className={classes.box}><ImgBox img={img7}/></div></ScrollAnimation >
+                    <ScrollAnimation  animateOut='fadeOutDown' duration={2} animateIn='fadeInDown' className={`${classes.contact} ${classes.box}`}><div className={classes.box}><ColorBox color={'#1c486b'}icon={'far fa-comment'} title={'Contact'}/></div></ScrollAnimation >
+                    <ScrollAnimation animateOnce={true} duration={2} animateIn='fadeInUp' className={`${classes.fishing2} ${classes.box}`}><div className={classes.box}><ImgBox img={img8}/></div></ScrollAnimation >
+<div className={classes.box}></div>
                    
     
 

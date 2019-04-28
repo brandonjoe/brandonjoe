@@ -1,4 +1,12 @@
+:root{
+    --mainBlue: rgb(6,136,149);
+    --secondBlue: #74B3CE;
+    --greyBlue: #508991;
+    --darkBlue: #1c486b;
+    --greenBlue: #004346;
+    --lightGreen: #09BC8A;
 
+}
 *{
     margin: 0;
     padding: 0;

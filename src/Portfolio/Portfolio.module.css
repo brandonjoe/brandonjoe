@@ -1,0 +1,15 @@
+.container{
+    top: 0;
+    left: 0;
+    height: 101vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0,0,0, .6),
+        rgba(0,0,0, .6)),
+        url("../media/introback.jpg");
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
