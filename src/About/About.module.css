@@ -12,12 +12,13 @@
     background-repeat: none;
     background-position: center;
 
+    color: ghostwhite;
 }
 .main{
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -44,10 +45,40 @@
     flex-direction: row;
     align-items: center;
 }
+.left{
+    width: 40%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 7rem;
+}
 .title{
-    width: 80%;
-    background:red;
-    margin: 2rem;
-    padding: 2rem;
-    float: left;
+    background: var(--greyBlue);
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 8px;
+}
+.header{
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: right;
+    letter-spacing: 3px;
+}
+
+
+.right{
+    width: 40%;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.subheader{
+    margin-top: 4rem;
+}
+.p1{
+    margin-bottom: 2rem;
 }

@@ -1,0 +1,152 @@
+.container{
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0,0,0, .7),
+        rgba(0,0,0, .7)),
+        url("../media/skillsback.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    color: ghostwhite;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.box{
+    transition: .5s all;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: 1;
+    padding: 0;
+    border: 0;
+    background: none;
+    outline: none;
+    margin: 2rem 0 2rem 0;
+}
+.box:hover{
+    transform: scale(1.1);
+    z-index: 100;
+}
+.right{
+    margin-right: 2rem;
+}
+.left{
+    margin-left: 2rem;
+}
+.middle{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto repeat(10, 6rem) auto ;
+    grid-template-rows: auto repeat(8, 6rem) auto;
+    grid-template-areas:
+    ". . . . . . . . . . ."
+    ". . . css header header header header . java ."
+    ". html . . header header header header csharp . ."
+    ". . . sass para para para para . . jquery"
+    ". . boot . para para para para node . ."
+    ". mongo . . javascript . . express  . react ."
+    ". . postsql . . . webpack . . . matlab"
+    ". . . . . . . . . . ."
+
+    ;
+}
+.image{
+    height: 5rem;
+    width: 5rem;
+}
+.css{
+    grid-area: css;
+}
+.java{
+    grid-area: java;
+}
+.javascript{
+    grid-area: javascript;
+}
+.html{
+    grid-area: html;
+}
+.csharp{
+    grid-area: csharp;
+}
+.boot{
+    grid-area: boot;
+}
+.sass{
+    grid-area: sass;
+}
+.jquery{
+    grid-area: jquery;
+}
+.react{
+    grid-area: react;
+}
+.node{
+    grid-area: node;
+}
+.mongo{
+    grid-area: mongo;
+}
+.express{
+    grid-area: express;
+}
+.postsql{
+    grid-area: postsql;
+}
+.webpack{
+    grid-area: webpack;
+}
+.matlab{
+    grid-area: matlab;
+}
+.title{
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-area: header;
+}
+.header1{
+    background: var(--greenBlue);
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 3rem;
+    font-weight: 300;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 0rem;
+    letter-spacing: 8px;
+    text-align: center;
+    
+}
+.p1{
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    
+}
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: para;
+}
