@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import ColorBox from '../Intro/ColorBox';
 import Tech from './Tech';
 import matlab from '../media/skillsmatlab.png';
-const Skills = () => {
+const Skills = (props) => {
     return (
         <div className={classes.container}>
         <div className={classes.title}>
@@ -14,7 +14,7 @@ const Skills = () => {
         </div>
             <div className={classes.main}>
                 <div className={`${classes.left} ${classes.nav}`}>
-                <ScrollAnimation  duration={2} animateIn='fadeInDown' animateOut='fadeOutDown' className={`${classes.about} ${classes.box}`}><button onClick={() => {this.props.about()}} className={classes.box}><ColorBox color={'#508991'} icon={'far fa-address-card'} title={'About'}/></button></ScrollAnimation >
+                <ScrollAnimation  duration={2} animateIn='fadeInDown' animateOut='fadeOutDown' className={`${classes.about} ${classes.box}`}><button onClick={() => {props.about()}} className={classes.box}><ColorBox color={'#508991'} icon={'far fa-address-card'} title={'About'}/></button></ScrollAnimation >
                     <ScrollAnimation animateOut='fadeOutUp' offset={225} duration={2} animateIn='fadeInUp' className={`${classes.portfolio} ${classes.box}`}><button className={classes.box}><ColorBox color={'#09BC8A'} icon={'fas fa-code'} title={'Portfolio'}/></button></ScrollAnimation >
                        
                 </div>

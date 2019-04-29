@@ -6,7 +6,7 @@ class Intro extends Component {
         return (
             <div className={classes.container}>
                 <div className={classes.main}>
-                    <Grid about={this.props.about}/>
+                    <Grid about={this.props.about} skills={this.props.skills}/>
                 </div>
                 
                 

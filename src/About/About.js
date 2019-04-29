@@ -9,7 +9,7 @@ class About extends Component {
             <div className={classes.container}>
                 <div className={classes.nav}>
                 <ScrollAnimation animateOut='fadeOutDown' duration={2} animateIn='fadeInRight' className={`${classes.portfolio} ${classes.box}`}><div className={classes.box}><ColorBox color={'#09BC8A'} icon={'fas fa-code'} title={'Portfolio'}/></div></ScrollAnimation >
-                        <ScrollAnimation animateOut='fadeOutUp' offset={225}  duration={2} animateIn='fadeInDown' className={`${classes.skills} ${classes.box}`}><div className={classes.box}><ColorBox color={'#004346'} icon={'fas fa-code'} title={'Skills'}/></div></ScrollAnimation >
+                        <ScrollAnimation animateOut='fadeOutUp' offset={225}  duration={2} animateIn='fadeInDown' className={`${classes.skills} ${classes.box}`}><button onClick={() => {this.props.skills()}} className={classes.box}><ColorBox color={'#004346'} icon={'fas fa-code'} title={'Skills'}/></button></ScrollAnimation >
                         <ScrollAnimation animateOut='fadeOutDown' offset={225} duration={2} animateIn='fadeInUp' className={`${classes.blog} ${classes.box}`}><div className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></div></ScrollAnimation >
                         <ScrollAnimation  animateOut='fadeOutLeft' offset={225} duration={2} animateIn='fadeInRight' className={`${classes.contact} ${classes.box}`}><div className={classes.box}><ColorBox color={'#1c486b'}icon={'far fa-comment'} title={'Contact'}/></div></ScrollAnimation >
                 </div>

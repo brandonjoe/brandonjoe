@@ -12,21 +12,18 @@ const Fullpage = () => (
         return (
           <ReactFullpage.Wrapper>
             <div className="section" >
-              <Intro about={() => fullpageApi.moveTo(2)}/>
+              <Intro 
+              about={() => fullpageApi.moveTo(2)}
+              skills={()=> fullpageApi.moveTo(3)}/>
               
             </div>
             <div className="section">
-              <About />
+              <About skills={()=> fullpageApi.moveTo(3)}/>
             </div>
             <div className="section" >
-              <Skills />
+              <Skills about={() => fullpageApi.moveTo(2)}/>
             </div>
-            <div className="section">
-              <About />
-            </div>
-            <div className="section" >
-              <Intro />
-            </div>
+
             
           </ReactFullpage.Wrapper>
         );
