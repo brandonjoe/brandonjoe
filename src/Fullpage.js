@@ -2,8 +2,8 @@ import React from 'react';
 
 import Intro from './Intro/Intro';
 import About from './About/About';
-import Portfolio from './Portfolio/Portfolio';
 import Skills from './Skills/Skills';
+import Portfolio from './Portfolio/Portfolio';
 import ReactFullpage from '@fullpage/react-fullpage';
 const Fullpage = () => (
     <ReactFullpage
@@ -14,16 +14,23 @@ const Fullpage = () => (
             <div className="section" >
               <Intro 
               about={() => fullpageApi.moveTo(2)}
-              skills={()=> fullpageApi.moveTo(3)}/>
+              skills={()=> fullpageApi.moveTo(3)}
+              portfolio={()=> fullpageApi.moveTo(4)}/>
               
             </div>
             <div className="section">
-              <About skills={()=> fullpageApi.moveTo(3)}/>
+              <About skills={()=> fullpageApi.moveTo(3)}
+              portfolio={()=> fullpageApi.moveTo(4)}/>
             </div>
             <div className="section" >
-              <Skills about={() => fullpageApi.moveTo(2)}/>
+              <Skills about={() => fullpageApi.moveTo(2)}
+              portfolio={()=> fullpageApi.moveTo(4)}
+              />
             </div>
-
+            <div className="section" >
+              <Portfolio about={() => fullpageApi.moveTo(2) }
+              skills={()=> fullpageApi.moveTo(3)}/>
+            </div>
             
           </ReactFullpage.Wrapper>
         );

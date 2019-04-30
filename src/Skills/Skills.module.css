@@ -18,7 +18,7 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 .box{
@@ -31,6 +31,7 @@
     background: none;
     outline: none;
     margin: 2rem 0 2rem 0;
+    font-size: 1rem;
 }
 .box:hover{
     transform: scale(1.1);
@@ -43,11 +44,11 @@
     margin-left: 2rem;
 }
 .middle{
-    height: 100%;
-    width: 100%;
+    
+    
     display: grid;
-    grid-template-columns: auto repeat(10, 6rem) auto ;
-    grid-template-rows: auto repeat(8, 6rem) auto;
+    grid-template-columns:  repeat(12, 6rem)  ;
+    grid-template-rows:  repeat(10, 6rem) ;
     grid-template-areas:
     ". . . . . . . . . . ."
     ". . . css header header header header . java ."

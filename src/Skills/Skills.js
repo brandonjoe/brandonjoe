@@ -7,11 +7,6 @@ import matlab from '../media/skillsmatlab.png';
 const Skills = (props) => {
     return (
         <div className={classes.container}>
-        <div className={classes.title}>
-  
-
-            
-        </div>
             <div className={classes.main}>
                 <div className={`${classes.left} ${classes.nav}`}>
                 <ScrollAnimation  duration={2} animateIn='fadeInDown' animateOut='fadeOutDown' className={`${classes.about} ${classes.box}`}><button onClick={() => {props.about()}} className={classes.box}><ColorBox color={'#508991'} icon={'far fa-address-card'} title={'About'}/></button></ScrollAnimation >
@@ -19,7 +14,7 @@ const Skills = (props) => {
                        
                 </div>
                 <div className={classes.middle}>
-                    <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeInLeft' animateOut='fadeOutUp'className={classes.header} >
+                    <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeInDown' animateOut='fadeOutUp'className={classes.header} >
                         <div className={classes.header1}>Skills</div>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeInUp' animateOut='fadeOutUp' className={classes.para}>

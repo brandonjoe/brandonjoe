@@ -1,15 +1,82 @@
 .container{
     top: 0;
     left: 0;
-    height: 101vh;
+    height: 100vh;
     width: 100%;
     background-image: linear-gradient(
         to right bottom,
         rgba(0,0,0, .6),
         rgba(0,0,0, .6)),
-        url("../media/introback.jpg");
-}
+        url("../media/portback3.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    color: ghostwhite;
+    max-width: 100%;
+
+} 
+
 .main{
-    height: 100%;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    transition: .5s all;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: 1;
+    padding: 0;
+    border: 0;
+    background: none;
+    outline: none;
+    margin: 2rem 0 2rem 0;
+    font-size: 1rem;
+}
+.box:hover{
+    transform: scale(1.1);
+    z-index: 100;
+    
+}
+
+.right{
+    margin-right: 2rem;
+}
+.left{
+    margin-left: 2rem;
+}
+.mid{
+    -o-display:flex;
+-webkit-display:flex;
+-ms-display:flex;
+-moz-display:flex;
+    
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+   
+}
+.title{
+    background: var(--lightGreen);
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 8px;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.projects{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    transition: 1s all;
+    
 }
