@@ -1,0 +1,181 @@
+.container{
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0,0,0, .5),
+        rgba(0,0,0, .6)),
+        url("../media/contactback2.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    color: ghostwhite;
+}
+.box{
+    transition: .5s all;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: 1;
+    padding: 0;
+    border: 0;
+    background: none;
+    outline: none;
+    margin: 1.5rem;
+    font-size: 1rem;
+}
+.box:hover{
+    transform: scale(1.1);
+    z-index: 100;
+}
+.main{
+    margin-top: 4rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.left{
+    max-width: 35rem;
+    height: 30%;
+}
+.right{
+    width: 25rem;
+    height: 30%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.nav{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.header{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 300;
+    margin: 3rem 6rem 3rem 3rem;
+    text-align: center;
+}
+
+.title{
+    margin: 0 auto;
+    background: var(--darkBlue);
+    padding: 2rem 5rem 2rem 5rem;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 8px;
+    width: fit-content;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+
+.name{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--lightBlue);
+    color: white;
+} 
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+label{
+    width: 47%;
+    display: block;
+    margin-bottom: 2rem;
+    float: left;
+}
+input{
+    background: rgba(0, 0, 0, 0.363);
+    color: white;
+    font-size: 1rem; 
+    letter-spacing: 2px;
+}
+.message label{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    height: 17rem;
+    background: rgba(0, 0, 0, 0.363);
+    color: white;
+    font-size: 1rem; 
+    letter-spacing: 2px;
+    border: 1px solid var(--lightBlue);
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    padding: 1rem;
+}
+
+.button{
+    width: 50%;
+    margin: 0 auto;
+    padding: .5rem;
+    background: rgba(68, 68, 68, 0.699);
+    border: 1px solid black;
+    transition: all .5s;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-size: 1rem;
+}
+.button:hover{
+    transform: scale(1.1);
+    translate: 5px;
+    background: rgba(126, 126, 126, 0.692);
+}
+.name:focus:invalid{
+    background: rgba(255, 0, 0, 0.144);
+}
+.name:focus:valid{
+    background: rgba(94, 255, 0, 0.144);
+}
+.info{
+    display: flex;
+ 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+.map{
+    color: #01ac66;
+    font-size: 2rem;
+}
+.phone{
+    color: #e9672d;
+    font-size: 2rem;
+}
+.email{
+    color: #ebb03c;
+    font-size: 2rem;
+}
+.detail{
+    width: 80%;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.info:last-child{
+    margin-bottom: 4rem;
+}

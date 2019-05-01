@@ -18,8 +18,7 @@ const Portfolio = (props) => {
                             Portfolio
                         </div>
                     </ScrollAnimation>
-                    
-
+   
                     <div className={classes.projects}>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn' className={classes.project}>
                     <Project img={port1} title={'Portfolio'} languages={'React'} github={'https://github.com/brandonjoe/brandonjoe'} text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates et quae eum blanditiis laudantium illo voluptas.'} className={classes.project}/>

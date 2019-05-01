@@ -49,11 +49,7 @@
     margin-left: 2rem;
 }
 .mid{
-    -o-display:flex;
--webkit-display:flex;
--ms-display:flex;
--moz-display:flex;
-    
+    width: 60%;
     height: 90%;
     display: flex;
     flex-direction: column;
@@ -78,5 +74,20 @@
     align-content: center;
     flex-wrap: wrap;
     transition: 1s all;
+    width: 9%;
     
+}
+@media only screen and (max-width: 1306px){
+    .right{
+        margin-right: 0rem;
+    }
+    .left{
+        margin-left: 0rem;
+    }
+    .main{
+        justify-content: space-between;
+    }
+    .projects{
+        width: 100%;
+    }
 }

@@ -4,6 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import ColorBox from '../Intro/ColorBox';
 import Tech from './Tech';
 import matlab from '../media/skillsmatlab.png';
+import r from '../media/skillsr.png';
 const Skills = (props) => {
     return (
         <div className={classes.container}>
@@ -85,6 +86,13 @@ const Skills = (props) => {
                     <ScrollAnimation animateOnce={false} duration={2} animateIn='fadeInRight' className={`${classes.matlab} `}><div className={classes.box}><Tech 
                         icon={<img className={classes.image} src={matlab}></img>}/></div>
                     </ScrollAnimation >
+                    <ScrollAnimation animateOnce={false} duration={2} animateIn='fadeInRight' className={`${classes.babel} `}><div className={classes.box}><Tech 
+                        icon={<i class="devicon-babel-plain colored"></i>}/></div>
+                    </ScrollAnimation >
+                    <ScrollAnimation animateOnce={false} duration={2} animateIn='fadeInRight' className={`${classes.r} `}><div className={classes.box}><Tech 
+                        icon={<img className={classes.image} src={r}></img>}/></div>
+                    </ScrollAnimation >
+                    
                 </div>
                 <div className={`${classes.right} ${classes.nav}`}>
                 <ScrollAnimation animateOut='fadeOutDown' offset={225} duration={2} animateIn='fadeInDown' className={`${classes.blog} ${classes.box}`}><button className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></button></ScrollAnimation >

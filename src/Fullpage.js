@@ -4,6 +4,10 @@ import Intro from './Intro/Intro';
 import About from './About/About';
 import Skills from './Skills/Skills';
 import Portfolio from './Portfolio/Portfolio';
+import Contact from './Contact/Contact';
+
+
+
 import ReactFullpage from '@fullpage/react-fullpage';
 const Fullpage = () => (
     <ReactFullpage
@@ -30,6 +34,11 @@ const Fullpage = () => (
             <div className="section" >
               <Portfolio about={() => fullpageApi.moveTo(2) }
               skills={()=> fullpageApi.moveTo(3)}/>
+            </div>
+            <div className="section" >
+              <Contact about={() => fullpageApi.moveTo(2) }
+              skills={()=> fullpageApi.moveTo(3)}
+              portfolio={()=> fullpageApi.moveTo(4)}/>
             </div>
             
           </ReactFullpage.Wrapper>

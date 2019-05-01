@@ -48,16 +48,16 @@
     
     display: grid;
     grid-template-columns:  repeat(12, 6rem)  ;
-    grid-template-rows:  repeat(10, 6rem) ;
+    grid-template-rows:  repeat(7, 6rem) ;
     grid-template-areas:
-    ". . . . . . . . . . ."
+
     ". . . css header header header header . java ."
     ". html . . header header header header csharp . ."
     ". . . sass para para para para . . jquery"
     ". . boot . para para para para node . ."
-    ". mongo . . javascript . . express  . react ."
-    ". . postsql . . . webpack . . . matlab"
-    ". . . . . . . . . . ."
+    ". . mongo . javascript . . express  . react ."
+    ". r . postsql . . webpack . babel . matlab"
+  
 
     ;
 }
@@ -110,9 +110,13 @@
 .matlab{
     grid-area: matlab;
 }
+.babel{
+    grid-area: babel;
+}
+.r{
+    grid-area: r;
+}
 .title{
-    
-    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -150,4 +154,38 @@
     justify-content: center;
     align-items: center;
     grid-area: para;
+}
+@media only screen and (max-width: 1500px){
+    .main{
+        flex-direction: column;
+    }
+    .left{
+        display: flex;
+        flex-direction: row;
+    }
+    .right{
+        display: flex;
+        flex-direction: row;
+        
+        align-items: flex-start;
+    }
+    .box{
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 1155px){
+    .middle{
+        grid-template-columns:  repeat(10, 6rem)  ;
+        grid-template-areas:
+
+    " . . css header header header header . java ."
+    " html . . header header header header csharp . ."
+    " . . sass para para para para . . jquery"
+    " . boot . para para para para node . ."
+    " . mongo . javascript . . express  . react ."
+    " r . postsql . . webpack . babel . matlab"
+  
+
+    ;
+    }
 }

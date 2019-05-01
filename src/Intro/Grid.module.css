@@ -93,3 +93,27 @@
     grid-area: last
 }
 
+@media only screen and (max-width: 1300px){
+    .main{
+        grid-template-areas: 
+        ". . . . . . . . ."
+        ". . . . . . . . ."
+        ". . title title title title fishing1 about ."
+        ". skills zion zion zion venice portfolio snowboard ."
+        ". . building blog fishing2 snowboard2 snowboard2 contact . "
+        ". . . monica . . . . .";
+    }
+}
+@media only screen and (max-width: 1150px){
+    .main{
+        grid-template-columns: auto repeat(6, 10rem) auto ;
+        grid-template-areas: 
+        ". . . . . . . . ."
+        ". . . . . about . . ."
+        ". . title title title title fishing1 . ."
+        ". skills zion zion zion venice portfolio . ."
+        ". . building blog fishing2 snowboard2 snowboard2 . . "
+        ". . . monica snowboard contact . . .";
+    }
+    
+}
