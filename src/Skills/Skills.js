@@ -10,8 +10,8 @@ const Skills = (props) => {
         <div className={classes.container}>
             <div className={classes.main}>
                 <div className={`${classes.left} ${classes.nav}`}>
-                <ScrollAnimation  duration={2} animateIn='fadeInDown' animateOut='fadeOutDown' className={`${classes.about} ${classes.box}`}><button onClick={() => {props.about()}} className={classes.box}><ColorBox color={'#508991'} icon={'far fa-address-card'} title={'About'}/></button></ScrollAnimation >
-                    <ScrollAnimation animateOut='fadeOutUp' offset={225} duration={2} animateIn='fadeInUp' className={`${classes.portfolio} ${classes.box}`}><button className={classes.box}><ColorBox color={'#09BC8A'} icon={'fas fa-code'} title={'Portfolio'}/></button></ScrollAnimation >
+                <ScrollAnimation  duration={2} animateIn='fadeInDown' animateOut='fadeOutDown' className={`${classes.about} `}><button onClick={() => {props.about()}} className={classes.box1}><ColorBox color={'#508991'} icon={'far fa-address-card'} title={'About'}/></button></ScrollAnimation >
+                    <ScrollAnimation animateOut='fadeOutUp' offset={150} duration={2} animateIn='fadeInUp' className={`${classes.portfolio} `}><button  onClick={() => {props.portfolio()}} className={classes.box1}><ColorBox color={'#09BC8A'} icon={'fas fa-code'} title={'Portfolio'}/></button></ScrollAnimation >
                        
                 </div>
                 <div className={classes.middle}>
@@ -95,8 +95,8 @@ const Skills = (props) => {
                     
                 </div>
                 <div className={`${classes.right} ${classes.nav}`}>
-                <ScrollAnimation animateOut='fadeOutDown' offset={225} duration={2} animateIn='fadeInDown' className={`${classes.blog} ${classes.box}`}><button className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></button></ScrollAnimation >
-                    <ScrollAnimation  animateOut='fadeOutUp' offset={225} duration={2} animateIn='fadeInUp' className={`${classes.contact} ${classes.box}`}><button className={classes.box}><ColorBox color={'#1c486b'}icon={'far fa-comment'} title={'Contact'}/></button></ScrollAnimation >
+                <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInDown' className={`${classes.blog} `}><button className={classes.box1}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></button></ScrollAnimation >
+                    <ScrollAnimation  animateOut='fadeOutUp' offset={150} duration={2} animateIn='fadeInUp' className={`${classes.contact} `}><button onClick={() => {props.contact()}} className={classes.box1}><ColorBox color={'#1c486b'}icon={'far fa-comment'} title={'Contact'}/></button></ScrollAnimation >
                 </div>
             </div>
            

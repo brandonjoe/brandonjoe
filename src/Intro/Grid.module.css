@@ -6,14 +6,12 @@
     justify-content: center;
     align-items: center;
     z-index: 10;
-
+    overflow: hidden;
 }
+
 
 .main{
     display: grid;
-    width: 100%;
-    height: 100%;
-    
     grid-template-columns: auto repeat(8, 10rem) auto ;
     grid-template-rows: auto repeat(5, 10rem) auto;
     grid-template-areas: 
@@ -109,11 +107,50 @@
         grid-template-columns: auto repeat(6, 10rem) auto ;
         grid-template-areas: 
         ". . . . . . . . ."
-        ". . . . . about . . ."
-        ". . title title title title fishing1 . ."
+        ". . . . . . . . ."
+        ". about title title title title fishing1 . ."
         ". skills zion zion zion venice portfolio . ."
         ". . building blog fishing2 snowboard2 snowboard2 . . "
         ". . . monica snowboard contact . . .";
+    }
+    
+}
+@media only screen and (max-width: 967px){
+    .main{
+        grid-template-columns:  repeat(5, 10rem)  ;
+        grid-template-rows:  repeat(6, 10rem) ;
+        grid-template-areas: 
+        
+        " . . . . . .  "
+        " about title title title title .  "
+        " skills zion zion zion venice .  "
+        " portfolio building blog snowboard2 snowboard2  . "
+        "  fishing1 monica fishing2 snowboard contact .  "
+        " . . . . . .  ";
+    }
+}
+@media only screen and (max-width: 800px){
+  
+    .main{
+        
+        grid-template-columns:  repeat(4, 7rem)  ;
+        grid-template-rows:  repeat(6, 7rem) ;
+        grid-template-areas: 
+        
+        "  title title title title   "
+        "  title title title title   "
+        "  zion zion zion about   "
+        "  building skills snowboard2 snowboard2   "
+        "  portfolio fishing2 snowboard contact   "
+        "  venice blog monica fishing1   ";
+    }
+   
+}
+@media screen and (max-height: 850px) and (max-width: 550px){
+    .main{
+        grid-template-columns:  repeat(4, 5rem)  ;
+        grid-template-rows:  repeat(6, 5rem) ;
+
     }
     
 }

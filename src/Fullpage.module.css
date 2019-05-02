@@ -1,0 +1,9 @@
+/* .section > .fp-tableCell{
+    height: auto !important;
+    padding: none !important;
+
+} */
+.section{
+    height: auto !important;
+}
+/* THIS WORKS, DON'T TOUCH */

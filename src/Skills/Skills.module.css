@@ -37,6 +37,22 @@
     transform: scale(1.1);
     z-index: 100;
 }
+.box1{
+    transition: .5s all;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: 1;
+    padding: 0;
+    border: 0;
+    background: none;
+    outline: none;
+    margin: 2rem 0 2rem 0;
+    font-size: 1rem;
+}
+.box1:hover{
+    transform: scale(1.1);
+    z-index: 100;
+}
 .right{
     margin-right: 2rem;
 }
@@ -48,7 +64,7 @@
     
     display: grid;
     grid-template-columns:  repeat(12, 6rem)  ;
-    grid-template-rows:  repeat(7, 6rem) ;
+    grid-template-rows:  repeat(6, 6rem) ;
     grid-template-areas:
 
     ". . . css header header header header . java ."
@@ -172,6 +188,11 @@
     .box{
         margin: 0;
     }
+    .box1{
+        margin: 1rem;
+        
+    }
+    
 }
 @media only screen and (max-width: 1155px){
     .middle{
@@ -187,5 +208,80 @@
   
 
     ;
+    }
+    
+}
+@media only screen and (max-width: 1155px){
+    .middle{
+        grid-template-columns:  repeat(10, 6rem)  ;
+        grid-template-areas:
+
+    " . . css header header header header . java ."
+    " html . . header header header header csharp . ."
+    " . . sass para para para para . . jquery"
+    " . boot . para para para para node . ."
+    " . mongo . javascript . . express  . react ."
+    " r . postsql . . webpack . babel . matlab"
+  
+
+    ;
+    }
+    
+}
+@media only screen and (max-width: 962px){
+    .middle{
+        grid-template-columns:  repeat(8, 6rem)  ;
+        grid-template-areas:
+
+    "  . css header header header header . java "
+    "  html . header header header header csharp . "
+    "  . sass para para para para .  jquery"
+    "  boot . para para para para node . "
+    "  mongo . javascript . . express  . react "
+    " r postsql .  webpack . babel . matlab"
+  
+
+    ;
+    }
+}
+@media only screen and (max-width: 800px){
+    .middle{
+        grid-template-columns:  repeat(6, 6rem)  ;
+        grid-template-areas:
+
+    "   css header header header header java  "
+    "   html header header header header csharp  "
+    "   sass para para para para jquery  "
+    "   boot para para para para node  "
+    "   mongo javascript . . express  react  "
+    "   postsql r  webpack . babel matlab ";
+    }
+}
+@media screen and (max-height: 850px) and (max-width: 550px){
+    .middle{
+        grid-template-columns:  repeat(4, 5rem)  ;
+        grid-template-rows:  repeat(3, 5rem)  ;
+        grid-template-areas:
+
+        "header header header header"
+        "para para para para"
+        "para para para para";
+    }
+    .box{
+       display: none;
+    }
+    .header1{
+        font-size: 2rem;
+        padding: 1rem;
+        width: fit-content;
+    }
+    .box1{
+        display: block;
+    }
+    .left{
+        margin: 0 auto;
+    }
+    .right{
+        margin: 0 auto;
     }
 }

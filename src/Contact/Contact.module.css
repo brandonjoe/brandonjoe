@@ -179,3 +179,65 @@ textarea{
 .info:last-child{
     margin-bottom: 4rem;
 }
+@media only screen and (max-width: 1018px){
+    .box{
+        margin: 0;
+    }
+    .title{
+        font-size: 1.7rem;
+    }
+}
+@media screen and (max-height: 850px) and (max-width: 550px){
+    .main{
+        margin-top: 4rem;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .title{
+        font-size: 1.1rem;
+        padding: 1rem;
+    }
+    .map, .phone, .email{
+        font-size: 1rem;
+    }
+    .detail{
+        font-size: 1rem;
+    }
+    .info{
+        margin: 0;
+    }
+    .right{
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+    }
+    .info:last-child{
+        margin-bottom: 0rem;
+    }
+    .header{
+        margin: 0rem;
+        margin-bottom: .5rem;
+    }
+    .form{
+        margin: 0 auto;
+    }
+    .nav{
+        padding-top: 1rem;
+    }
+}
+@media screen and (max-height: 750px) and (max-width: 415px){
+    textarea{
+        margin: 0;
+        height: 10rem;
+    }
+    .container{
+        height: 120vh;
+    }
+    .right{
+        width: 20rem;
+    }
+}

@@ -4,13 +4,13 @@ import Grid from './Grid';
 class Intro extends Component {
     render() {
         return (
-            <div className={classes.container}>
+
                 <div className={classes.main}>
-                    <Grid about={this.props.about} skills={this.props.skills} portfolio={this.props.portfolio}/>
+                    <Grid about={this.props.about} skills={this.props.skills} portfolio={this.props.portfolio} contact={this.props.contact}/>
                 </div>
                 
                 
-            </div>
+
         );
     }
 }

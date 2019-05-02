@@ -24,9 +24,9 @@ class Contact extends Component {
             <div className={classes.container}>
             <div className={classes.nav}>
                         <ScrollAnimation  duration={2} animateIn='fadeInLeft' animateOut='fadeOutDown' className={`${classes.about} ${classes.box}`}><button onClick={() => {this.props.about()}} className={classes.box}><ColorBox color={'#508991'} icon={'far fa-address-card'} title={'About'}/></button></ScrollAnimation >
-                        <ScrollAnimation animateOut='fadeOutUp' offset={225}  duration={2} animateIn='fadeInDown' className={`${classes.skills} ${classes.box}`}><button onClick={() => {this.props.skills()}} className={classes.box}><ColorBox color={'#004346'} icon={'fas fa-code'} title={'Skills'}/></button></ScrollAnimation >
+                        <ScrollAnimation animateOut='fadeOutUp' offset={150}  duration={2} animateIn='fadeInDown' className={`${classes.skills} ${classes.box}`}><button onClick={() => {this.props.skills()}} className={classes.box}><ColorBox color={'#004346'} icon={'fas fa-code'} title={'Skills'}/></button></ScrollAnimation >
                         <ScrollAnimation animateOut='fadeOutDown' duration={2} animateIn='fadeInRight' className={`${classes.portfolio} ${classes.box}`}><button onClick={() => {this.props.portfolio()}} className={classes.box}><ColorBox color={'#09BC8A'} icon={'fas fa-code'} title={'Portfolio'}/></button></ScrollAnimation >
-                        <ScrollAnimation animateOut='fadeOutDown' offset={225} duration={2} animateIn='fadeInUp' className={`${classes.blog} ${classes.box}`}><div className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></div></ScrollAnimation >
+                        <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInUp' className={`${classes.blog} ${classes.box}`}><div className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></div></ScrollAnimation >
                        
             </div>
                 <div className={classes.main}>
@@ -54,7 +54,7 @@ class Contact extends Component {
                                 Contact
                             </div>
                         </ScrollAnimation>
-                        <ScrollAnimation  animateOnce={true} offset={400} duration={2} animateIn='fadeInRight'>
+                        <ScrollAnimation  animateOnce={true} offset={400} offset={50} duration={2} animateIn='fadeInRight'>
                             <div className={classes.info}>
                                 <i class={`fas fa-map-marker-alt ${classes.map}`}></i>
                                 <div className={classes.detail}>

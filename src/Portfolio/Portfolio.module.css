@@ -74,7 +74,7 @@
     align-content: center;
     flex-wrap: wrap;
     transition: 1s all;
-    width: 9%;
+    width: 90%;
     
 }
 @media only screen and (max-width: 1306px){
@@ -88,6 +88,27 @@
         justify-content: space-between;
     }
     .projects{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1018px){
+    .box{
+        margin: 0;
+    }
+    .nav{
+    
+    }
+}
+@media screen and (max-height: 850px) and (max-width: 550px){
+    .title{
+        font-size: 1.4rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    .nav{
+        display: none;
+    }
+    .mid{
         width: 100%;
     }
 }
