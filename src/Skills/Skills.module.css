@@ -71,7 +71,7 @@
     ". html . . header header header header csharp . ."
     ". . . sass para para para para . . jquery"
     ". . boot . para para para para node . ."
-    ". . mongo . javascript . . express  . react ."
+    ". . firebase . javascript . . express  . react ."
     ". r . postsql . . webpack . babel . matlab"
   
 
@@ -111,8 +111,8 @@
 .node{
     grid-area: node;
 }
-.mongo{
-    grid-area: mongo;
+.firebase{
+    grid-area: firebase;
 }
 .express{
     grid-area: express;
@@ -133,6 +133,7 @@
     grid-area: r;
 }
 .title{
+    padding: 1.5rem 3rem 1.5rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -203,7 +204,7 @@
     " html . . header header header header csharp . ."
     " . . sass para para para para . . jquery"
     " . boot . para para para para node . ."
-    " . mongo . javascript . . express  . react ."
+    " . firebase . javascript . . express  . react ."
     " r . postsql . . webpack . babel . matlab"
   
 
@@ -220,7 +221,7 @@
     " html . . header header header header csharp . ."
     " . . sass para para para para . . jquery"
     " . boot . para para para para node . ."
-    " . mongo . javascript . . express  . react ."
+    " . firebase . javascript . . express  . react ."
     " r . postsql . . webpack . babel . matlab"
   
 
@@ -237,7 +238,7 @@
     "  html . header header header header csharp . "
     "  . sass para para para para .  jquery"
     "  boot . para para para para node . "
-    "  mongo . javascript . . express  . react "
+    "  firebase . javascript . . express  . react "
     " r postsql .  webpack . babel . matlab"
   
 
@@ -253,7 +254,7 @@
     "   html header header header header csharp  "
     "   sass para para para para jquery  "
     "   boot para para para para node  "
-    "   mongo javascript . . express  react  "
+    "   firebase javascript . . express  react  "
     "   postsql r  webpack . babel matlab ";
     }
 }

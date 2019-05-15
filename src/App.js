@@ -1,21 +1,26 @@
-import React from 'react';
+
 import './App.css';
-import ReactDom from 'react-dom';
-import ReactFullpage from '@fullpage/react-fullpage';
 import Fullpage from './Fullpage';
-import Intro from './Intro/Intro';
-import About from './About/About';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <Fullpage />
+import { Preloader, Placeholder } from 'react-preloading-screen';
+class App extends Component {
 
+  render() {
+    const imgurl = require('./media/introback.jpg')
+    let style={
+      backgroundImage: `linear-gradient(
+        to right bottom,
+        rgba(0,0,0, .6),
+        rgba(0,0,0, .6)),
+        url(${imgurl})`
+    }
+    return (
 
-      
-      
-    </div>
-  );
+        <Fullpage />
+
+    );
+  }
 }
 
 export default App;
