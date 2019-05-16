@@ -112,3 +112,8 @@
         width: 100%;
     }
 }
+@media screen and (max-height: 850px) and (max-width: 415px){
+    .container{
+        height: 140vh;
+    }
+}
