@@ -111,9 +111,12 @@
     .mid{
         width: 100%;
     }
-}
-@media screen and (max-height: 850px) and (max-width: 415px){
     .container{
-        height: 140vh;
+        height: 130vh;
+    }
+}
+@media screen and (max-height: 812px) and (max-width: 415px){
+    .container{
+        height: 100vh;
     }
 }

@@ -115,6 +115,9 @@
     .title{
         font-size:1rem;
     }
+    .github{
+        height: 25%;
+    }
 }
 @media screen and (max-height: 850px) and (max-width: 550px){
     .container{
@@ -129,7 +132,7 @@
         font-size: .8rem;
     }
 }
-@media screen and (max-height: 740px) and (max-width: 415px){
+@media screen and (max-height: 812px) and (max-width: 415px){
     .container{
         height: 8rem;
         width: 8rem;

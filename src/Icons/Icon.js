@@ -7,7 +7,7 @@ const Icon = () => {
         <div className={classes.container}>
             <ul>
                 <li>
-                    <a href="https://github.com/brandonjoe">
+                    <a href="https://github.com/brandonjoe" target="_blank" >
                     
                         <span></span>
                         <span></span>
@@ -19,7 +19,7 @@ const Icon = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/brandon-joe/">
+                    <a href="https://www.linkedin.com/in/brandon-joe/" target="_blank">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -28,7 +28,7 @@ const Icon = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" target="_blank">
                         <span></span>
                         <span></span>
                         <span></span>
