@@ -10,6 +10,7 @@
 }
 .container:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .text{
@@ -38,10 +39,10 @@
 }
 
 .container:hover img{
-    filter: brightness(30%);
+    filter: brightness(20%);
 }
 .container:hover .title{
-    filter: brightness(50%);
+    filter: brightness(20%);
 }
 .main{
     height: 100%;

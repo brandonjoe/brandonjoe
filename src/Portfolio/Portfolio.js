@@ -9,6 +9,7 @@ import port3 from '../media/port3.JPG';
 import port4 from '../media/port4.JPG';
 import port5 from '../media/port5.JPG';
 import port6 from '../media/port6.JPG';
+import port7 from '../media/port7.JPG';
 
 const Portfolio = (props) => {
     return (
@@ -27,22 +28,25 @@ const Portfolio = (props) => {
    
                     <div className={classes.projects}>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn' className={classes.project}>
-                    <Project img={port2} title={'Sphere Game'} demo={'https://github.com/brandonjoe/SphereGame'} languages={'Unity, C#'} github={'https://github.com/brandonjoe/SphereGame'} text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates et quae eum blanditiis laudantium illo voluptas.'} className={classes.project}/>
+                    <Project img={port2} title={'Sphere Game'} demo={'https://github.com/brandonjoe/SphereGame'} languages={'Unity, C#'} github={'https://github.com/brandonjoe/SphereGame'} text={'Physics based ball game developed in Unity 3D with C#.'} className={classes.project}/>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
-                    <Project img={port3} title={'E-Commerce'} demo={'https://brandonjoe.github.io/store/'} languages={'HTML/CSS, React'} github={'https://github.com/brandonjoe/store'} text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates et quae eum blanditiis laudantium illo voluptas.'} className={classes.project}/>
+                    <Project img={port7} title={'Steam News'} demo={'https://brandonjoe.github.io/SteamApp/'} languages={'React, Node/Express'} github={'https://github.com/brandonjoe/SteamApp'} text={'Generates current news for Steam games you play.'} className={classes.project}/>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
-                    <Project img={port4} title={'CodeGig'} demo={'https://codegigs.herokuapp.com/'} languages={'Node/Express, PostgreSQL '} github={'https://github.com/brandonjoe/codegig'} text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates et quae eum blanditiis laudantium illo voluptas.'} className={classes.project}/>
+                    <Project img={port3} title={'E-Commerce'} demo={'https://brandonjoe.github.io/store/'} languages={'HTML/CSS, React'} github={'https://github.com/brandonjoe/store'} text={'Fully functional E-Commerce store based off an Etsy Store'} className={classes.project}/>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
-                    <Project img={port1} title={'Portfolio'} demo={'http://brandonjoe.com/'} languages={'HTML/CSS,React'} github={'https://github.com/brandonjoe/brandonjoe'} text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates et quae eum blanditiis laudantium illo voluptas.'} className={classes.project}/>
+                    <Project img={port4} title={'CodeGig'} demo={'https://codegigs.herokuapp.com/'} languages={'Node/Express, PostgreSQL '} github={'https://github.com/brandonjoe/codegig'} text={'App made for both developers and employers to work with eachother for small gigs.'} className={classes.project}/>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
-                    <Project img={port5} title={'Homepage'} demo={'https://brandonjoe.github.io/homepage/'} languages={'HTML/CSS, Javascript'} github={'https://github.com/brandonjoe/homepage'} text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates et quae eum blanditiis laudantium illo voluptas.'} className={classes.project}/>
+                    <Project img={port1} title={'Portfolio'} demo={'http://brandonjoe.com/'} languages={'HTML/CSS,React'} github={'https://github.com/brandonjoe/brandonjoe'} text={'The website about myself.'} className={classes.project}/>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
-                    <Project img={port6} title={'Forkify'} demo={'https://brandonjoe.github.io/homepage/'} languages={'HTML/CSS, Javascript'} github={'https://github.com/brandonjoe/homepage'} text={'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptates et quae eum blanditiis laudantium illo voluptas.'} className={classes.project}/>
+                    <Project img={port5} title={'Homepage'} demo={'https://brandonjoe.github.io/homepage/'} languages={'HTML/CSS, Javascript'} github={'https://github.com/brandonjoe/homepage'} text={'Customized homepage made for me when I open new tabs/browsers.'} className={classes.project}/>
+                    </ScrollAnimation>
+                    <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
+                    <Project img={port6} title={'Forkify'} demo={'https://brandonjoe.github.io/homepage/'} languages={'HTML/CSS, Javascript'} github={'https://github.com/brandonjoe/homepage'} text={'App made to search for food recipies using Rest API.'} className={classes.project}/>
                     </ScrollAnimation>
 
                    
