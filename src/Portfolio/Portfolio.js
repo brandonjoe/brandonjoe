@@ -46,7 +46,7 @@ const Portfolio = (props) => {
                     <Project img={port5} title={'Homepage'} demo={'https://brandonjoe.github.io/homepage/'} languages={'HTML/CSS, Javascript'} github={'https://github.com/brandonjoe/homepage'} text={'Customized homepage made for me when I open new tabs/browsers.'} className={classes.project}/>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
-                    <Project img={port6} title={'Forkify'} demo={'https://brandonjoe.github.io/homepage/'} languages={'HTML/CSS, Javascript'} github={'https://github.com/brandonjoe/homepage'} text={'App made to search for food recipies using Rest API.'} className={classes.project}/>
+                    <Project img={port6} title={'Forkify'} demo={'https://brandonjoe.github.io/forkify/'} languages={'HTML/CSS, Javascript'} github={'https://github.com/brandonjoe/homepage'} text={'App made to search for food recipies using Rest API.'} className={classes.project}/>
                     </ScrollAnimation>
 
                    
