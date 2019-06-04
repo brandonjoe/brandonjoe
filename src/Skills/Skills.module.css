@@ -177,12 +177,11 @@
         flex-direction: column;
     }
     .left{
-        display: flex;
-        flex-direction: row;
+        display: none;
+
     }
     .right{
-        display: flex;
-        flex-direction: row;
+        display: none;
         
         align-items: flex-start;
     }
@@ -193,6 +192,7 @@
         margin: 1rem;
         
     }
+    
     
 }
 @media only screen and (max-width: 1155px){
@@ -285,4 +285,5 @@
     .right{
         margin: 0 auto;
     }
+   
 }

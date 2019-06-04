@@ -179,6 +179,14 @@ textarea{
 .info:last-child{
     margin-bottom: 4rem;
 }
+@media only screen and (max-width: 1500px){
+    .container{
+        height: auto;
+    }
+    .main{
+        padding-bottom: 5rem;
+    }
+}
 @media only screen and (max-width: 1018px){
     .box{
         margin: 0;
@@ -229,15 +237,15 @@ textarea{
         padding-top: 1rem;
     }
 }
-@media screen and (max-height: 750px) and (max-width: 415px){
+@media screen and (max-height:850px) and (max-width: 415px){
     textarea{
         margin: 0;
         height: 10rem;
     }
     .container{
-        height: 120vh;
+        height: auto;
     }
     .right{
-        width: 20rem;
+        width: 18em;
     }
 }

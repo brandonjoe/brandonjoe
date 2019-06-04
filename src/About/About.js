@@ -17,7 +17,7 @@ class About extends Component {
                 <div className={classes.main}>
                     
                     <div className={classes.left}>
-                    <ScrollAnimation  animateOut='fadeOutRight' animateOnce={true} offset={400} duration={2} animateIn='fadeInLeft'>
+                    <ScrollAnimation  animateOut='fadeOutRight' animateOnce={true} offset={150} duration={2} animateIn='fadeInLeft'>
                             <div className={classes.title}>
                                 About Me
                             </div>
@@ -30,7 +30,7 @@ class About extends Component {
                     </div>
                     <div className={classes.right}>
                         <div className></div>
-                        <ScrollAnimation animateOut='fadeOutRight' animateOnce={true} delay={3} offset={400} duration={2} animateIn='fadeInRight'>
+                        <ScrollAnimation animateOut='fadeOutRight' animateOnce={true} delay={3} offset={150} duration={2} animateIn='fadeInRight'>
                         <div className={classes.p1}>My name is Brandon Joe. I'm a self-taught front-end developer with a goal to make the web a more enjoyable place. After studying applied and computational mathematics as well as computer science at San Jose State University, I have found amusement in putting logic and creativity into a clean interface. 
                         </div>
                         <div className={classes.p2}>What do I like to do other than dabbling with websites? During my free time, I enjoy fishing, biking, gaming or making models. I'm not the best at any of these (maybe gaming) but I'm definitely the coolest at them. Have an idea or want to talk about something nerdy? Feel free to reach out below! </div>

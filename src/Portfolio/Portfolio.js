@@ -10,6 +10,8 @@ import port4 from '../media/port4.JPG';
 import port5 from '../media/port5.JPG';
 import port6 from '../media/port6.JPG';
 import port7 from '../media/port7.JPG';
+import port8 from '../media/port8.JPG';
+import port9 from '../media/port9.JPG'
 
 const Portfolio = (props) => {
     return (
@@ -34,13 +36,19 @@ const Portfolio = (props) => {
                     <Project img={port7} title={'Steam News'} demo={'https://brandonjoe.github.io/SteamApp/'} languages={'React, Node/Express'} github={'https://github.com/brandonjoe/SteamApp'} text={'Generates current news for Steam games you play.'} className={classes.project}/>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
-                    <Project img={port3} title={'E-Commerce'} demo={'https://brandonjoe.github.io/store/'} languages={'HTML/CSS, React'} github={'https://github.com/brandonjoe/store'} text={'Fully functional E-Commerce store based off an Etsy Store'} className={classes.project}/>
+                    <Project img={port3} title={'E-Commerce'} demo={'https://brandonjoe.github.io/store/'} languages={'HTML/CSS, React'} github={'https://github.com/brandonjoe/store'} text={'Fully functional E-Commerce store based off an Etsy Store.'} className={classes.project}/>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
-                    <Project img={port4} title={'CodeGig'} demo={'https://codegigs.herokuapp.com/'} languages={'Node/Express, PostgreSQL '} github={'https://github.com/brandonjoe/codegig'} text={'App made for both developers and employers to work with eachother for small gigs.'} className={classes.project}/>
+                    <Project img={port4} title={'CodeGig'} demo={'https://codegigs.herokuapp.com/'} languages={'Node/Express, PostgreSQL '} github={'https://github.com/brandonjoe/codegig'} text={'App made for both developers and employers for small gigs.'} className={classes.project}/>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
-                    <Project img={port1} title={'Portfolio'} demo={'http://brandonjoe.com/'} languages={'HTML/CSS,React'} github={'https://github.com/brandonjoe/brandonjoe'} text={'The website about myself.'} className={classes.project}/>
+                    <Project img={port8} title={'Model Kit'} demo={'https://brandonjoe.github.io/GundamFreedomShowcase/'} languages={'HTML/CSS,React'} github={'https://github.com/brandonjoe/GundamFreedomShowcase'} text={'Showcase of a model kit to practice design/creativity.'} className={classes.project}/>
+                    </ScrollAnimation>
+                    <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
+                    <Project img={port1} title={'Portfolio'} demo={'http://brandonjoe.com/'} languages={'HTML/CSS,React'} github={'https://github.com/brandonjoe/brandonjoe'} text={'Portfolio website about myself. '} className={classes.project}/>
+                    </ScrollAnimation>
+                    <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
+                    <Project img={port9} title={'Angel City'} demo={'https://brandonjoe.github.io/AngelCity/'} languages={'HTML/CSS,React'} github={'https://github.com/brandonjoe/AngelCity'} text={'Showcase for Titanfall 2 map.'} className={classes.project}/>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
                     <Project img={port5} title={'Homepage'} demo={'https://brandonjoe.github.io/homepage/'} languages={'HTML/CSS, Javascript'} github={'https://github.com/brandonjoe/homepage'} text={'Customized homepage made for me when I open new tabs/browsers.'} className={classes.project}/>

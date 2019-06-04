@@ -155,6 +155,9 @@
     .header{
         margin-top: 0rem;
     }
+    .nav{
+        display: none;
+    }
 }
 @media screen and (max-height: 775px) and (max-width: 450px){
     .p1, .p2{
