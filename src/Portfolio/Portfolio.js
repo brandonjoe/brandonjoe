@@ -48,8 +48,9 @@ const Portfolio = (props) => {
                     <Project img={port1} title={'Portfolio'} demo={'http://brandonjoe.com/'} languages={'HTML/CSS,React'} github={'https://github.com/brandonjoe/brandonjoe'} text={'Portfolio website about myself. '} className={classes.project}/>
                     </ScrollAnimation>
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
-                    <Project img={port9} title={'Angel City'} demo={'https://brandonjoe.github.io/AngelCity/'} languages={'HTML/CSS,React'} github={'https://github.com/brandonjoe/AngelCity'} text={'Showcase for Titanfall 2 map.'} className={classes.project}/>
+                    <Project img={port9} title={'Angel City'} demo={'https://brandonjoe.github.io/AngelCity/'} languages={'HTML/CSS,React'} github={'https://github.com/brandonjoe/AngelCity'} text={'Showcase of a Titanfall 2 map for design practice.'} className={classes.project}/>
                     </ScrollAnimation>
+                   
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
                     <Project img={port5} title={'Homepage'} demo={'https://brandonjoe.github.io/homepage/'} languages={'HTML/CSS, Javascript'} github={'https://github.com/brandonjoe/homepage'} text={'Customized homepage made for me when I open new tabs/browsers.'} className={classes.project}/>
                     </ScrollAnimation>
