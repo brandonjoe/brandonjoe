@@ -26,20 +26,36 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <title>Brandon's Portfolio</title>
+    <style type=text/css>
+    .loading{
+      top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0,0,0, .6),
+        rgba(0,0,0, .6)),
+        url("./introback.jpg");
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    }
+ 
+    body{
+      margin: 0;
+    padding: 0;
+    }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script src="bundle.js"></script>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <div id="root" ></div>
+    <div class="loading" > </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

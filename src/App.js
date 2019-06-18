@@ -2,25 +2,27 @@
 import './App.css';
 import Fullpage from './Fullpage';
 import React, { Component } from 'react';
-
+import Loading from './Loading/Loading'
 import { Preloader, Placeholder } from 'react-preloading-screen';
 class App extends Component {
+ 
+  state = { isLoading: true }
+ 
+    
 
+componentDidMount() {
+  console.log('loaded')
+  this.setState({isLoading: false})
+}
+ 
   render() {
-    const imgurl = require('./media/introback.jpg')
-    let style={
-      backgroundImage: `linear-gradient(
-        to right bottom,
-        rgba(0,0,0, .6),
-        rgba(0,0,0, .6)),
-        url(${imgurl})`
-    }
-    return (
 
-        <Fullpage />
+    return (
+        this.setState.isLoading === false ? <Loading /> : <Fullpage />
 
     );
   }
 }
+
 
 export default App;
