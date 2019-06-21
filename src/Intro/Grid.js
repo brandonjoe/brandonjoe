@@ -4,7 +4,7 @@ import IntroTile from './IntroTile.js';
 import ImgBox from './ImgBox.js';
 import ColorBox from './ColorBox.js';
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import { Link } from "react-router-dom";
 
 import img1 from '../media/intro1.jpg';
 import img2 from '../media/intro2.jpg';
@@ -15,7 +15,6 @@ import img6 from '../media/intro6.jpg';
 import img7 from '../media/intro7.jpg';
 import img8 from '../media/intro8.JPG';
 class Grid extends Component {
-    
     render() {
         return (
             <div className={classes.container}>
@@ -31,7 +30,8 @@ class Grid extends Component {
                     <ScrollAnimation delay={1000} animateOnce={true} duration={2} animateIn='fadeInLeft' className={`${classes.venice} ${classes.box}`}><div className={classes.box}><ImgBox img={img4}/></div></ScrollAnimation >
                     <ScrollAnimation delay={1000} animateOnce={true} duration={2} animateIn='fadeInLeft' className={`${classes.building} ${classes.box}`}><div className={classes.box}><ImgBox img={img5}/></div></ScrollAnimation >
                     <ScrollAnimation delay={1000} animateOnce={true} duration={2} animateIn='fadeInLeft' className={`${classes.monica} ${classes.box}`}><div className={classes.box}><ImgBox img={img6}/></div></ScrollAnimation >
-                    <ScrollAnimation delay={0} animateOut='fadeOutDown' duration={2} animateIn='fadeInRight' className={`${classes.blog} ${classes.box}`}><div className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></div></ScrollAnimation >
+                    <Link to={`/blog`}className={`${classes.blog} ${classes.box}`} style={{textDecoration: 'none'}}><ScrollAnimation delay={0} animateOut='fadeOutDown' duration={2} animateIn='fadeInRight'><div className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></div></ScrollAnimation ></Link>
+                    
                     <ScrollAnimation delay={1000} animateOnce={true} duration={2} animateIn='fadeInRight' className={`${classes.snowboard2} ${classes.box}`}><div className={classes.box}><ImgBox img={img7}/></div></ScrollAnimation >
                     <ScrollAnimation delay={0}  animateOut='fadeOutDown' duration={2} animateIn='fadeInDown' className={`${classes.contact} ${classes.box}`}><button onClick={() => {this.props.contact()}} className={classes.box}><ColorBox color={'#1c486b'}icon={'far fa-id-card'} title={'Contact'}/></button></ScrollAnimation >
                     <ScrollAnimation delay={1000} animateOnce={true} duration={2} animateIn='fadeInUp' className={`${classes.fishing2} ${classes.box}`}><div className={classes.box}><ImgBox img={img8}/></div></ScrollAnimation >

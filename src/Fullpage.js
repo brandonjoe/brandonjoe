@@ -6,7 +6,7 @@ import Skills from './Skills/Skills';
 import Portfolio from './Portfolio/Portfolio';
 import Contact from './Contact/Contact';
 import classes from './Fullpage.module.css'
-
+import { Link } from "react-router-dom";
 import ReactFullpage from '@fullpage/react-fullpage';
 
 const Fullpage = () => (

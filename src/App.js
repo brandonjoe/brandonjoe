@@ -2,23 +2,19 @@
 import './App.css';
 import Fullpage from './Fullpage';
 import React, { Component } from 'react';
-import Loading from './Loading/Loading'
-import { Preloader, Placeholder } from 'react-preloading-screen';
+import {Switch, Route} from  'react-router-dom';
+import Blog from './Blog/Blog'
 class App extends Component {
- 
-  state = { isLoading: true }
- 
-    
 
-componentDidMount() {
-  console.log('loaded')
-  this.setState({isLoading: false})
-}
  
   render() {
 
     return (
-        this.setState.isLoading === false ? <Loading /> : <Fullpage />
+      <Switch>
+        <Route path={"/"} exact component={Fullpage}/>
+        <Route path={"/blog"} exact component={Blog}/>
+      </Switch>
+
 
     );
   }
