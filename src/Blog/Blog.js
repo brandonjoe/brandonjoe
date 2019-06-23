@@ -64,8 +64,12 @@ class Blog extends Component {
       .then(value => {
         let arr = [];
    
-        console.log(value.items[0].content);
+        console.log("HI");
         for (let i = 0; i < 3; i++){
+            let str = value.items[0].content;
+            var regex = /(http)?s?:?(\/\/[^"']*\.(?:png|jpg|jpeg|gif|png|svg))/;
+            var src = regex.exec(str)[1];
+           console.log("ASDSADA")
             let preview = limitTitle(extractContent(value.items[i].content));
             let title = value.items[i].title;
             let date = new Date(value.items[i].published);
