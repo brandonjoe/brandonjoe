@@ -15,7 +15,7 @@
     color: ghostwhite;
 }
 .title{
-    background: var(--lightGreen);
+    background: var(--secondBlue);
     padding: 1.5rem 3rem 1.5rem 3rem;
     font-size: 3rem;
     font-weight: 300;
@@ -52,4 +52,18 @@
 .box:hover{
     transform: scale(1.1);
     z-index: 100;
+}
+.posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.post{
+    width: 20rem;
+    height: 50rem;
+    margin: 2rem;
+}
+.image{
+    width: 100%;
 }
