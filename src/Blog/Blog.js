@@ -12,10 +12,20 @@ class Blog extends Component {
     //AIzaSyBsnoc9bzHl8bIsq8x7vm1dD1v9Eepg-TU
     //AIzaSyBCI-ZqIIw7Kqrbs9KDEJEhjmmiRhthJPE
     this.state = {
-      posts: []
+      posts: [],
+      isMouseInside: false
     };
   }
-
+  someOtherHandler = () => {
+    this.setState({
+      isMouseInside: false
+    });
+  };
+  blogbutton = () => {
+    this.setState({
+      isMouseInside: true
+    });
+  };
   componentWillMount() {
     const monthNames = [
       "January",
@@ -40,6 +50,7 @@ class Blog extends Component {
       "Friday",
       "Saturday"
     ];
+
     const extractContent = s => {
       let span = document.createElement("span");
       span.innerHTML = s;
@@ -68,7 +79,7 @@ class Blog extends Component {
         .then(value => {
           console.log(value.items[0]);
           let arr = [];
-          console.log(value.items.length)
+          console.log(value.items.length);
           for (let i = 0; i < value.items.length; i++) {
             let m;
             let urls = [];
@@ -203,12 +214,21 @@ class Blog extends Component {
         <div className={classes.posts}>
           {this.state.posts.map((post, index) => {
             return (
-              <div className={classes.post} key={index}>
+              <div
+                className={classes.post}
+                key={index}
+                onClick={() => {
+                  window.open(`${post.url}`);
+                }}
+              >
+                <div className={classes.darker}>
+                  <div className={classes.readmore}>Read More</div>
+                </div>
+                <img className={classes.image} src={post.image} />
                 <div className={classes.postTitle}>{post.title}</div>
-                <div>{post.fullDate}</div>
-                <div>{post.preview}</div>
-                <div>{post.url}</div>
-                <img className={classes.image} src={post.image}/>
+                <div className={classes.date}>{post.fullDate}</div>
+                <div className={classes.preview}>{post.preview}</div>
+
                 {post.labels.map((label, index) => {
                   return (
                     <a
