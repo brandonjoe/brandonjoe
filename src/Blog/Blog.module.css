@@ -14,3 +14,42 @@
 
     color: ghostwhite;
 }
+.title{
+    background: var(--lightGreen);
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 8px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.main{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.box{
+    transition: .5s all;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: 1;
+    padding: 0;
+    border: 0;
+    background: none;
+    outline: none;
+    margin: 1.5rem;
+    font-size: 1rem;
+}
+.box:hover{
+    transform: scale(1.1);
+    z-index: 100;
+}
