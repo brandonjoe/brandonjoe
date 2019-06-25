@@ -18,3 +18,6 @@ The only future plans I have would be to learn PHP so I don't have to use formsp
 ```
 html, css, javascript/react, RESTapi
 ```
+### Log
+
+6/25/2019- finished connecting Blogger api with infinite pagination
