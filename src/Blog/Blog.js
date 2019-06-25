@@ -143,13 +143,13 @@ class Blog extends Component {
         .then(value => {
           let arr = [];
           if (value.length > 1) {
-            for (let i = 0; i < 2; i++) {
+            for (let i = 0; i < 3; i++) {
               arr.push(value[i]);
             }
           }
           let arrays = [];
           while (value.length > 0) {
-            arrays.push(value.splice(0, 2));
+            arrays.push(value.splice(0, 3));
           }
           this.setState({
             posts: arrays,
@@ -206,7 +206,7 @@ class Blog extends Component {
               animateOut="fadeOutUp"
               offset={150}
               duration={2}
-              animateIn="fadeInDown"
+              animateIn="fadeInRight"
               className={`${classes.skills} ${classes.box}`}
             >
               <button
@@ -226,7 +226,7 @@ class Blog extends Component {
             <ScrollAnimation
               animateOnce={true}
               duration={2}
-              animateIn="fadeInDown"
+              animateIn="fadeIn"
               animateOut="fadeOutUp"
             >
               <div className={classes.title}>Blog</div>
@@ -234,7 +234,7 @@ class Blog extends Component {
             <ScrollAnimation
               animateOut="fadeOutDown"
               duration={2}
-              animateIn="fadeInRight"
+              animateIn="fadeInDown"
               className={`${classes.portfolio} ${classes.box}`}
             >
               <button
@@ -255,7 +255,7 @@ class Blog extends Component {
               animateOut="fadeOutLeft"
               offset={150}
               duration={2}
-              animateIn="fadeInRight"
+              animateIn="fadeInLeft"
               className={`${classes.contact} ${classes.box}`}
             >
               <button
