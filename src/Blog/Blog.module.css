@@ -273,6 +273,9 @@ align-items: center;
     align-items: flex-start;
 
 }
+.main{
+    padding-top: 0rem;
+}
 .readmore{
     margin-top: 10rem;
 }
@@ -302,9 +305,7 @@ align-items: center;
         height: 10rem;
         
     }
-   .main{
-       padding-top: 2rem;
-   }
+   
    .postTitle{
        font-size: 1.4rem;
    }
@@ -335,4 +336,18 @@ align-items: center;
        height: 27rem;
    }
  
+}
+@media only screen and (max-width: 500px){
+    .container{
+       height: 50rem;
+    }
+    .pagination{
+        height: 35rem;
+    }
+    .pagi{
+        font-size: .6rem;
+    }
+    .title{
+       font-size: 1.5rem;
+    }
 }

@@ -134,9 +134,15 @@
     .container{
         height: auto;
     }
+    
 }
 @media screen and (max-height: 850px) and (max-width: 415px){
     .container{
         height: auto;
+    }
+    .project{
+        
+        flex: 0 0 100%;
+        width: 100%;
     }
 }

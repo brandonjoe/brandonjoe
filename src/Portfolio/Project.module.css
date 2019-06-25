@@ -135,9 +135,10 @@
 }
 @media screen and (max-height: 812px) and (max-width: 415px){
     .container{
-        height: 8rem;
-        width: 8rem;
+        height: 12rem;
+        width: 15rem;
         margin: .5rem;
+        margin: 1rem auto;
     }
     .lang{
         display: none;
