@@ -16,5 +16,5 @@ The only future plans I have would be to learn PHP so I don't have to use formsp
 
 ### Tech
 ```
-html, css, javascript, react
+html, css, javascript/react, RESTapi
 ```
