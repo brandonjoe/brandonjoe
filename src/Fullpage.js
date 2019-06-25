@@ -44,6 +44,7 @@ const Fullpage = () => (
             <div className={`section ${classes.section}`} >
               <Blog about={() => fullpageApi.moveTo(2) }
               skills={()=> fullpageApi.moveTo(3)}
+              portfolio={()=> fullpageApi.moveTo(4)}
               contact={()=> fullpageApi.moveTo(6)}/>
             </div>
  

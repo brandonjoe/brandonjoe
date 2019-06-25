@@ -63,13 +63,13 @@
 .post{
     position: relative;
     width: 20rem;
-    height: 25rem;
+    height: 100%;
     margin: 2rem;
-    transition: .2s all;
+    overflow: auto;
+    transition: .2s all; 
 }
 .post:hover{
     transform: scale(1.05);
-  
 }
 .post:hover .image{
     filter: brightness(20%)
@@ -100,7 +100,6 @@
     visibility: visible;
     z-index: 100;
 }
-
 .readmore{
     background: rgb(128, 128, 128);
     padding: .5rem 1rem .5rem 1rem;
@@ -143,7 +142,7 @@ justify-content: space-between;
 align-items: center;
 }
 .pagi{
-    margin:0 10rem 0 10rem;
+    margin:0 20rem 0 20rem;
 }
 .pagi:hover{
     cursor: pointer;
@@ -265,4 +264,75 @@ align-items: center;
     text-decoration: none;
     color: rgb(143, 143, 143);
     z-index: 1000;
+}
+@media only screen and (max-width: 2050px){
+    .pagi{
+        margin:0 15rem 0 15rem;
+    }
+    .darker{
+    align-items: flex-start;
+
+}
+.readmore{
+    margin-top: 10rem;
+}
+}
+@media only screen and (max-width: 1920px){
+    .pagi{
+        margin:0 10rem 0 10rem;
+    }
+}
+@media only screen and (max-width: 1750px){
+    .pagi{
+        margin:0 3rem 0 3rem;
+    }
+
+}
+@media only screen and (max-width: 1500px){
+    .post{
+        position: relative;
+        width: 15rem;
+        height: 30rem;
+        margin: 2rem;
+        overflow: auto;
+        transition: .2s all; 
+    }
+    .image{
+        
+        height: 10rem;
+        
+    }
+   .main{
+       padding-top: 2rem;
+   }
+   .postTitle{
+       font-size: 1.4rem;
+   }
+   .preview{
+       font-size: .9rem;
+   }
+   .date{
+       padding-top: .2rem;
+       padding-bottom: .2rem;
+   }
+    .readmore{
+        margin-top: 5rem;
+    }   
+}
+@media only screen and (max-width: 1200px){
+    .box{
+        display: none;
+    }
+ 
+}
+@media only screen and (max-width: 942px){
+   .pagination{
+       align-items: flex-end;
+       justify-content: center;
+       height: 33rem;
+   }
+   .post{
+       height: 27rem;
+   }
+ 
 }

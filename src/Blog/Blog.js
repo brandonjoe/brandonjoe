@@ -148,9 +148,37 @@ class Blog extends Component {
             }
           }
           let arrays = [];
-          while (value.length > 0) {
-            arrays.push(value.splice(0, 3));
+          function myFunction(x) {
+            if (x.matches) {
+              // If media query matches
+              while (value.length > 0) {
+                arrays.push(value.splice(0, 2));
+              }
+            } else {
+              while (value.length > 0) {
+                arrays.push(value.splice(0, 3));
+              }
+            }
           }
+          function myFunction(y) {
+            if (y.matches) {
+              // If media query matches
+              while (value.length > 0) {
+                arrays.push(value.splice(0, 1));
+              }
+            } else {
+              while (value.length > 0) {
+                arrays.push(value.splice(0, 3));
+              }
+            }
+          }
+
+          let x = window.matchMedia("(max-width: 1000px)");
+          let y = window.matchMedia("(max-width: 500px)");
+          myFunction(x); // Call listener function at run time
+          x.addListener(myFunction);
+          myFunction(y); // Call listener function at run time
+          y.addListener(myFunction);
           this.setState({
             posts: arrays,
             showed: arrays[0]
@@ -163,22 +191,29 @@ class Blog extends Component {
     let left;
     let right;
     if (this.state.showLeft) {
-      left = <div onClick={this.prev} className={`${classes.pagi} ${classes.pagileft}`}>
-      <span></span>
-   
-      Newer
-    </div>
+      left = (
+        <div
+          onClick={this.prev}
+          className={`${classes.pagi} ${classes.pagileft}`}
+        >
+          <span />
+          Newer
+        </div>
+      );
     } else {
       left = <div />;
     }
     if (this.state.showRight) {
-      right = 
-      // <div className={`${classes.pagi} ${classes.pagiright}`}  onClick={this.next}></div>;
-      <div onClick={this.next} className={`${classes.pagi} ${classes.pagiright}`}>
-        <span></span>
-     
-        Older
-      </div>
+      right = (
+        // <div className={`${classes.pagi} ${classes.pagiright}`}  onClick={this.next}></div>;
+        <div
+          onClick={this.next}
+          className={`${classes.pagi} ${classes.pagiright}`}
+        >
+          <span />
+          Older
+        </div>
+      );
     } else {
       right = <div />;
     }
@@ -194,13 +229,25 @@ class Blog extends Component {
               animateIn="fadeInUp"
               className={`${classes.blog} ${classes.box}`}
             >
-              <button className={classes.box}>
-                <ColorBox
-                  color={"#508991"}
-                  icon={"far fa-comment"}
-                  title={"About"}
-                />
-              </button>
+              <ScrollAnimation
+                duration={2}
+                animateIn="fadeInDown"
+                animateOut="fadeOutDown"
+                className={`${classes.about} ${classes.box}`}
+              >
+                <button
+                  onClick={() => {
+                    this.props.about();
+                  }}
+                  className={classes.box}
+                >
+                  <ColorBox
+                    color={"#508991"}
+                    icon={"far fa-address-card"}
+                    title={"About"}
+                  />
+                </button>
+              </ScrollAnimation>
             </ScrollAnimation>
             <ScrollAnimation
               animateOut="fadeOutUp"
@@ -280,35 +327,56 @@ class Blog extends Component {
           </div>
           {this.state.showed.map((post, index) => {
             return (
-              <div
-              className={classes.post}
-              key={index}
-            
-              >
+              <div className={classes.post} key={index}>
                 <div className={classes.darker}>
-                  <a href={`${post.url}`}
-                      target="_blank" className={classes.readmore}>Read More</a>
+                  <a
+                    href={`${post.url}`}
+                    target="_blank"
+                    className={classes.readmore}
+                  >
+                    Read More
+                  </a>
                 </div>
-                <img   onClick={() => {
-                window.open(`${post.url}`);
-              }} className={classes.image} src={post.image} />
-                <div   onClick={() => {
-                window.open(`${post.url}`);
-              }} className={classes.postTitle}>{post.title}</div>
-                <div   onClick={() => {
-                window.open(`${post.url}`);
-              }} className={classes.date}>{post.fullDate}</div>
-                <div  onClick={() => {
-                window.open(`${post.url}`);
-              }} className={classes.preview}>{post.preview}</div>
+                <img
+                  onClick={() => {
+                    window.open(`${post.url}`);
+                  }}
+                  className={classes.image}
+                  src={post.image}
+                />
+                <div
+                  onClick={() => {
+                    window.open(`${post.url}`);
+                  }}
+                  className={classes.postTitle}
+                >
+                  {post.title}
+                </div>
+                <div
+                  onClick={() => {
+                    window.open(`${post.url}`);
+                  }}
+                  className={classes.date}
+                >
+                  {post.fullDate}
+                </div>
+                <div
+                  onClick={() => {
+                    window.open(`${post.url}`);
+                  }}
+                  className={classes.preview}
+                >
+                  {post.preview}
+                </div>
 
                 {post.labels.map((label, index) => {
                   return (
-                    <a className={classes.labels}
+                    <a
+                      className={classes.labels}
                       href={`https://brandonjoe42.blogspot.com/search/label/${label}`}
                       target="_blank"
                     >
-                      #{label} 
+                      #{label}
                     </a>
                   );
                 })}
