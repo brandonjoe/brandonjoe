@@ -13,19 +13,47 @@ class Blog extends Component {
     //AIzaSyBCI-ZqIIw7Kqrbs9KDEJEhjmmiRhthJPE
     this.state = {
       posts: [],
-      isMouseInside: false
+      showed: [],
+      index: 0,
+      showLeft: false,
+      showRight: true
     };
   }
-  someOtherHandler = () => {
+  next = () => {
+    let posts = this.state.posts;
+    let index = this.state.index;
+    index = index + 1;
+    if (posts.length - 1 === index) {
+      this.setState({
+        showRight: false
+      });
+    }
     this.setState({
-      isMouseInside: false
+      index: index,
+      showed: posts[index],
+      showLeft: true
     });
+    console.log(index);
   };
-  blogbutton = () => {
+
+  prev = () => {
+    let posts = this.state.posts;
+    let index = this.state.index;
+    index = index - 1;
+    if (index === 0) {
+      console.log("bbbb");
+      this.setState({
+        showLeft: false
+      });
+    }
     this.setState({
-      isMouseInside: true
+      index: index,
+      showed: posts[index],
+      showRight: true
     });
+    console.log(index);
   };
+
   componentWillMount() {
     const monthNames = [
       "January",
@@ -113,14 +141,48 @@ class Blog extends Component {
           return arr;
         })
         .then(value => {
+          let arr = [];
+          if (value.length > 1) {
+            for (let i = 0; i < 2; i++) {
+              arr.push(value[i]);
+            }
+          }
+          let arrays = [];
+          while (value.length > 0) {
+            arrays.push(value.splice(0, 2));
+          }
           this.setState({
-            posts: value
+            posts: arrays,
+            showed: arrays[0]
           });
         });
     };
     getData();
   }
   render() {
+    let left;
+    let right;
+    if (this.state.showLeft) {
+      left = <div onClick={this.prev} className={`${classes.pagi} ${classes.pagileft}`}>
+      <span></span>
+   
+      Newer
+    </div>
+    } else {
+      left = <div />;
+    }
+    if (this.state.showRight) {
+      right = 
+      // <div className={`${classes.pagi} ${classes.pagiright}`}  onClick={this.next}></div>;
+      <div onClick={this.next} className={`${classes.pagi} ${classes.pagiright}`}>
+        <span></span>
+     
+        Older
+      </div>
+    } else {
+      right = <div />;
+    }
+
     return (
       <div className={classes.container}>
         <div className={classes.main}>
@@ -212,30 +274,41 @@ class Blog extends Component {
           </div>
         </div>
         <div className={classes.posts}>
-          {this.state.posts.map((post, index) => {
+          <div className={classes.pagination}>
+            {left}
+            {right}
+          </div>
+          {this.state.showed.map((post, index) => {
             return (
               <div
-                className={classes.post}
-                key={index}
-                onClick={() => {
-                  window.open(`${post.url}`);
-                }}
+              className={classes.post}
+              key={index}
+            
               >
                 <div className={classes.darker}>
-                  <div className={classes.readmore}>Read More</div>
+                  <a href={`${post.url}`}
+                      target="_blank" className={classes.readmore}>Read More</a>
                 </div>
-                <img className={classes.image} src={post.image} />
-                <div className={classes.postTitle}>{post.title}</div>
-                <div className={classes.date}>{post.fullDate}</div>
-                <div className={classes.preview}>{post.preview}</div>
+                <img   onClick={() => {
+                window.open(`${post.url}`);
+              }} className={classes.image} src={post.image} />
+                <div   onClick={() => {
+                window.open(`${post.url}`);
+              }} className={classes.postTitle}>{post.title}</div>
+                <div   onClick={() => {
+                window.open(`${post.url}`);
+              }} className={classes.date}>{post.fullDate}</div>
+                <div  onClick={() => {
+                window.open(`${post.url}`);
+              }} className={classes.preview}>{post.preview}</div>
 
                 {post.labels.map((label, index) => {
                   return (
-                    <a
+                    <a className={classes.labels}
                       href={`https://brandonjoe42.blogspot.com/search/label/${label}`}
                       target="_blank"
                     >
-                      {label}
+                      #{label} 
                     </a>
                   );
                 })}
