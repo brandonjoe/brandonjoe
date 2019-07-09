@@ -20,5 +20,6 @@ html, css, javascript/react, RESTapi
 ```
 ### Log
 
-6/25/2019- finished connecting Blogger api with infinite pagination
+6/25/2019 - finished connecting Blogger api with infinite pagination
+7/8/2019 - made some changes to the blog section
 
