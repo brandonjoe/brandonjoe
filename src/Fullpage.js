@@ -7,7 +7,7 @@ import Portfolio from './Portfolio/Portfolio';
 import Contact from './Contact/Contact';
 import Blog from './Blog/Blog';
 import classes from './Fullpage.module.css'
-import { Link } from "react-router-dom";
+
 import ReactFullpage from '@fullpage/react-fullpage';
 
 const Fullpage = () => (
@@ -21,6 +21,7 @@ const Fullpage = () => (
               about={() => fullpageApi.moveTo(2)}
               skills={()=> fullpageApi.moveTo(3)}
               portfolio={()=> fullpageApi.moveTo(4)}
+              blog={()=> fullpageApi.moveTo(5)}
               contact={()=> fullpageApi.moveTo(6)}/>
               
             </div>
@@ -28,17 +29,20 @@ const Fullpage = () => (
               <About 
               skills={()=> fullpageApi.moveTo(3)}
               portfolio={()=> fullpageApi.moveTo(4)}
+              blog={()=> fullpageApi.moveTo(5)}
               contact={()=> fullpageApi.moveTo(6)}/>
             </div>
             <div className={`section ${classes.section}`} >
               <Skills about={() => fullpageApi.moveTo(2)}
               portfolio={()=> fullpageApi.moveTo(4)}
+              blog={()=> fullpageApi.moveTo(5)}
               contact={()=> fullpageApi.moveTo(6)}
               />
             </div>
             <div className={`section ${classes.section}`} >
               <Portfolio about={() => fullpageApi.moveTo(2) }
               skills={()=> fullpageApi.moveTo(3)}
+              blog={()=> fullpageApi.moveTo(5)}
               contact={()=> fullpageApi.moveTo(6)}/>
             </div>
             <div className={`section ${classes.section}`} >
@@ -50,6 +54,7 @@ const Fullpage = () => (
  
             <div className={`section ${classes.section}`} >
               <Contact about={() => fullpageApi.moveTo(2) }
+              blog={()=> fullpageApi.moveTo(5)}
               skills={()=> fullpageApi.moveTo(3)}
               portfolio={()=> fullpageApi.moveTo(4)}/>
             </div>

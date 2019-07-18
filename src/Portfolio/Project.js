@@ -24,7 +24,7 @@ const Project = props => {
         <div className={classes.github}>
           <div className={classes.lang}>&lt;/&gt; {props.languages}</div>
           <a href={props.github} target="_blank" className={classes.git}>
-            <i class={`devicon-github-plain ${classes.githubicon}`} />
+            <i className={`devicon-github-plain ${classes.githubicon}`} />
           </a>
         </div>
       </div>

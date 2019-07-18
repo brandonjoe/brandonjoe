@@ -11,8 +11,8 @@ class About extends Component {
                 <div className={classes.nav}>
                 
                         <ScrollAnimation  animateOut='fadeOutUp' offset={150}  duration={2} animateIn='fadeInDown' className={`${classes.skills} ${classes.box}`}><button onClick={() => {this.props.skills()}} className={classes.box}><ColorBox color={'#004346'} icon={'fas fa-code'} title={'Skills'}/></button></ScrollAnimation >
-                        <ScrollAnimation animateOut='fadeOutDown' duration={2} animateIn='fadeInRight' className={`${classes.portfolio} ${classes.box}`}><button onClick={() => {this.props.portfolio()}} className={classes.box}><ColorBox color={'#09BC8A'} icon={'far fa-images'} title={'Portfolio'}/></button></ScrollAnimation >
- <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInUp' className={`${classes.blog} ${classes.box}`}><div className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></div></ScrollAnimation >
+                        <ScrollAnimation animateOut='fadeOutDown' duration={2} animateIn='fadeInRight' className={`${classes.portfolio} ${classes.box}`}><button className={classes.box}><ColorBox color={'#09BC8A'} icon={'far fa-images'} title={'Portfolio'}/></button></ScrollAnimation >
+ <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInUp' className={`${classes.blog} ${classes.box}`}><button onClick={() => {this.props.blog()}}  className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></button></ScrollAnimation >
                         <ScrollAnimation  animateOut='fadeOutLeft' offset={150} duration={2} animateIn='fadeInRight' className={`${classes.contact} ${classes.box}`}><button onClick={() => {this.props.contact()}} className={classes.box}><ColorBox color={'#1c486b'}icon={'far fa-id-card'} title={'Contact'}/></button></ScrollAnimation >
                 </div>
                 <div className={classes.main}>
@@ -30,7 +30,7 @@ class About extends Component {
                         </div>
                     </div>
                     <div className={classes.right}>
-                        <div className></div>
+                  
                         <ScrollAnimation animateOut='fadeOutRight' animateOnce={true} delay={3} offset={150} duration={2} animateIn='fadeInRight'>
                         <div className={classes.p1}>My name is Brandon Joe. I'm a self-taught front-end developer with a goal to make the web a more enjoyable place. After studying applied and computational mathematics as well as computer science at San Jose State University, I have found amusement in putting logic and creativity into a clean interface. 
                         </div>

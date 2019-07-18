@@ -20,7 +20,7 @@ class Intro extends Component {
         return (
 
                 <div  className={classes.main} onLoad={this.onLoad}>
-                    <Grid about={this.props.about} skills={this.props.skills} portfolio={this.props.portfolio} contact={this.props.contact}/>
+                    <Grid about={this.props.about} skills={this.props.skills} portfolio={this.props.portfolio} blog={this.props.blog} contact={this.props.contact}/>
                 </div>
                 
                 

@@ -33,7 +33,7 @@ class Blog extends Component {
       showed: posts[index],
       showLeft: true
     });
-    console.log(index);
+   
   };
 
   prev = () => {
@@ -41,7 +41,6 @@ class Blog extends Component {
     let index = this.state.index;
     index = index - 1;
     if (index === 0) {
-      console.log("bbbb");
       this.setState({
         showLeft: false
       });
@@ -51,7 +50,7 @@ class Blog extends Component {
       showed: posts[index],
       showRight: true
     });
-    console.log(index);
+
   };
 
   componentWillMount() {
@@ -105,9 +104,9 @@ class Blog extends Component {
       )
         .then(res => res.json())
         .then(value => {
-          console.log(value.items[0]);
+
           let arr = [];
-          console.log(value.items.length);
+
           for (let i = 0; i < value.items.length; i++) {
             let m;
             let urls = [];
@@ -126,7 +125,7 @@ class Blog extends Component {
               monthNames[date.getMonth()]
             } ${date.getDate()} ${date.getFullYear()}`;
             let image = urls[0];
-            console.log(labels);
+        
             let obj = {
               title: title,
               preview: preview,
@@ -372,6 +371,7 @@ class Blog extends Component {
                 {post.labels.map((label, index) => {
                   return (
                     <a
+                    key={index}
                       className={classes.labels}
                       href={`https://brandonjoe42.blogspot.com/search/label/${label}`}
                       target="_blank"

@@ -50,7 +50,7 @@ class Contact extends Component {
                     <ScrollAnimation duration={2} animateIn='fadeInLeft' animateOut='fadeOutDown' className={`${classes.about} ${classes.box}`}><button onClick={() => { this.props.about() }} className={classes.box}><ColorBox color={'#508991'} icon={'far fa-address-card'} title={'About'} /></button></ScrollAnimation >
                     <ScrollAnimation animateOut='fadeOutUp' offset={150} duration={2} animateIn='fadeInDown' className={`${classes.skills} ${classes.box}`}><button onClick={() => { this.props.skills() }} className={classes.box}><ColorBox color={'#004346'} icon={'fas fa-code'} title={'Skills'} /></button></ScrollAnimation >
                     <ScrollAnimation animateOut='fadeOutDown' duration={2} animateIn='fadeInRight' className={`${classes.portfolio} ${classes.box}`}><button onClick={() => { this.props.portfolio() }} className={classes.box}><ColorBox color={'#09BC8A'} icon={'far fa-images'} title={'Portfolio'} /></button></ScrollAnimation >
-                    <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInUp' className={`${classes.blog} ${classes.box}`}><div className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'} /></div></ScrollAnimation >
+                    <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInUp' className={`${classes.blog} ${classes.box}`}><button onClick={() => { this.props.blog() }} className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'} /></button></ScrollAnimation >
 
                 </div>
                 <div className={classes.main}>
@@ -80,19 +80,19 @@ class Contact extends Component {
                         </ScrollAnimation>
                         <ScrollAnimation animateOnce={true} offset={400} offset={50} duration={2} animateIn='fadeInRight'>
                             <div className={classes.info}>
-                                <i class={`fas fa-map-marker-alt ${classes.map}`}></i>
+                                <i className={`fas fa-map-marker-alt ${classes.map}`}></i>
                                 <div className={classes.detail}>
                                     Los Angeles, California <br />
                                 </div>
                             </div>
                             <div className={classes.info}>
-                                <i class={`fas fa-phone ${classes.phone}`}></i>
+                                <i className={`fas fa-phone ${classes.phone}`}></i>
                                 <div className={classes.detail}>
                                     (424) 259-3218
                                 </div>
                             </div>
                             <div className={classes.info}>
-                                <i class={`fas fa-envelope ${classes.email}`}></i>
+                                <i className={`fas fa-envelope ${classes.email}`}></i>
                                 <div className={classes.detail}>
                                     contact@brandonjoe.com
                                 </div>
