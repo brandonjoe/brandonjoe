@@ -7,3 +7,8 @@
     height: auto !important;
 }
 /* THIS WORKS, DON'T TOUCH */
+.loading{
+    height: 100vh;
+    background: blue;
+    width: 100%;
+}
