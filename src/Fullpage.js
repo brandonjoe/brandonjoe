@@ -42,7 +42,7 @@ render(){
   if(this.state.counter <= 6){
     content = <div className={classes.loading}>still loading</div>
   } else {
-    content = <div>everything's done</div>
+    content = <div></div>
   }
   return (
   <ReactFullpage
@@ -53,7 +53,10 @@ render(){
         
        <ReactFullpage.Wrapper>
          
-         <div className={`section ${classes.section} fp-responsive`} >
+         {/* <div className={`section ${classes.section} fp-responsive`}>
+{content}
+         </div> */}
+         <div className={`section ${classes.section} fp-responsive `} >
          <Intro loading={this.handleImageLoad}
          about={() => fullpageApi.moveTo(2)}
          skills={()=> fullpageApi.moveTo(3)}
@@ -62,7 +65,7 @@ render(){
          contact={()=> fullpageApi.moveTo(6)}/>
          
        </div>
-       <div className={`section ${classes.section}`}>
+       <div className={`section ${classes.section} `}>
          <About 
          skills={()=> fullpageApi.moveTo(3)}
          portfolio={()=> fullpageApi.moveTo(4)}
