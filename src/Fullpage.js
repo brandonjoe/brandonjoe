@@ -62,7 +62,7 @@ render(){
          skills={()=> fullpageApi.moveTo(3)}
          portfolio={()=> fullpageApi.moveTo(4)}
          blog={()=> fullpageApi.moveTo(5)}
-         contact={()=> fullpageApi.moveTo(6)}/>
+         contact={()=> fullpageApi.moveTo(5)}/>
          
        </div>
        <div className={`section ${classes.section} `}>
@@ -70,27 +70,27 @@ render(){
          skills={()=> fullpageApi.moveTo(3)}
          portfolio={()=> fullpageApi.moveTo(4)}
          blog={()=> fullpageApi.moveTo(5)}
-         contact={()=> fullpageApi.moveTo(6)}/>
+         contact={()=> fullpageApi.moveTo(5)}/>
        </div>
        <div className={`section ${classes.section}`} >
          <Skills about={() => fullpageApi.moveTo(2)}
          portfolio={()=> fullpageApi.moveTo(4)}
          blog={()=> fullpageApi.moveTo(5)}
-         contact={()=> fullpageApi.moveTo(6)}
+         contact={()=> fullpageApi.moveTo(5)}
          />
        </div>
        <div className={`section ${classes.section}`} >
          <Portfolio about={() => fullpageApi.moveTo(2) }
          skills={()=> fullpageApi.moveTo(3)}
          blog={()=> fullpageApi.moveTo(5)}
-         contact={()=> fullpageApi.moveTo(6)}/>
+         contact={()=> fullpageApi.moveTo(5)}/>
        </div>
-       <div className={`section ${classes.section}`} >
+       {/* <div className={`section ${classes.section}`} >
          <Blog about={() => fullpageApi.moveTo(2) }
          skills={()=> fullpageApi.moveTo(3)}
          portfolio={()=> fullpageApi.moveTo(4)}
          contact={()=> fullpageApi.moveTo(6)}/>
-       </div>
+       </div> */}
 
        <div className={`section ${classes.section}`} >
          <Contact about={() => fullpageApi.moveTo(2) }

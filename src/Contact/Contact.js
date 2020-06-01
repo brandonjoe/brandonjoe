@@ -50,7 +50,7 @@ class Contact extends Component {
                     <ScrollAnimation duration={2} animateIn='fadeInLeft' animateOut='fadeOutDown' className={`${classes.about} ${classes.box}`}><button onClick={() => { this.props.about() }} className={classes.box}><ColorBox color={'#508991'} icon={'far fa-address-card'} title={'About'} /></button></ScrollAnimation >
                     <ScrollAnimation animateOut='fadeOutUp' offset={150} duration={2} animateIn='fadeInDown' className={`${classes.skills} ${classes.box}`}><button onClick={() => { this.props.skills() }} className={classes.box}><ColorBox color={'#004346'} icon={'fas fa-code'} title={'Skills'} /></button></ScrollAnimation >
                     <ScrollAnimation animateOut='fadeOutDown' duration={2} animateIn='fadeInRight' className={`${classes.portfolio} ${classes.box}`}><button onClick={() => { this.props.portfolio() }} className={classes.box}><ColorBox color={'#09BC8A'} icon={'far fa-images'} title={'Portfolio'} /></button></ScrollAnimation >
-                    <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInUp' className={`${classes.blog} ${classes.box}`}><button onClick={() => { this.props.blog() }} className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'} /></button></ScrollAnimation >
+                    <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInUp' className={`${classes.blog} ${classes.box}`}><button onClick={()=> window.open("https://brandonjoe42.blogspot.com/", "_blank")} className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'} /></button></ScrollAnimation >
 
                 </div>
                 <div className={classes.main}>

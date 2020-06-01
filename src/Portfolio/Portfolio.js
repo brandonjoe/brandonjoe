@@ -58,16 +58,16 @@ const Portfolio = (props) => {
                     <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
                     <Project img={port5} title={'Homepage'} demo={'https://brandonjoe.github.io/homepage/'} languages={'HTML/CSS, Javascript'} github={'https://github.com/brandonjoe/homepage'} text={'Customized homepage made for me when I open new tabs/browsers.'} className={classes.project}/>
                     </ScrollAnimation> */}
-                    <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
+                    {/* <ScrollAnimation  animateOnce={true} duration={2} animateIn='fadeIn'className={classes.project}>
                     <Project img={port6} title={'Forkify'} demo={'https://brandonjoe.github.io/forkify/'} languages={'HTML/CSS, Javascript'} github={'https://github.com/brandonjoe/homepage'} text={'App made to search for food recipies using Rest API.'} className={classes.project}/>
-                    </ScrollAnimation>
+                    </ScrollAnimation> */}
 
                    
 
                     </div>
                 </div>
                 <div className={`${classes.right} ${classes.nav}`}>
-                    <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInDown' className={`${classes.blog} ${classes.box}`}><button onClick={() => {props.blog()}} className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></button></ScrollAnimation >
+                    <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInDown' className={`${classes.blog} ${classes.box}`}><button onClick={()=> window.open("https://brandonjoe42.blogspot.com/", "_blank")} className={classes.box}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></button></ScrollAnimation >
                     <ScrollAnimation  animateOut='fadeOutUp' offset={150} duration={2} animateIn='fadeInUp' className={`${classes.contact} ${classes.box}`}><button onClick={() => {props.contact()}} className={classes.box}><ColorBox color={'#1c486b'}icon={'far fa-id-card'} title={'Contact'}/></button></ScrollAnimation >
                 </div>
             </div>

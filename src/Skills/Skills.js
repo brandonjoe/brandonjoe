@@ -94,7 +94,7 @@ const Skills = (props) => {
                     
                 </div>
                 <div className={`${classes.right} ${classes.nav}`}>
-                <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInDown' className={`${classes.blog} `}><button onClick={() => {props.blog()}}className={classes.box1}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></button></ScrollAnimation >
+                <ScrollAnimation animateOut='fadeOutDown' offset={150} duration={2} animateIn='fadeInDown' className={`${classes.blog} `}><button onClick={()=> window.open("https://brandonjoe42.blogspot.com/", "_blank")} className={classes.box1}><ColorBox color={'#74B3CE'} icon={'far fa-comment'} title={'Blog'}/></button></ScrollAnimation >
                     <ScrollAnimation  animateOut='fadeOutUp' offset={150} duration={2} animateIn='fadeInUp' className={`${classes.contact} `}><button onClick={() => {props.contact()}} className={classes.box1}><ColorBox color={'#1c486b'}icon={'far fa-id-card'} title={'Contact'}/></button></ScrollAnimation >
                 </div>
             </div>
