@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.17",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-devicon": "^0.1.9",
